@@ -19,7 +19,6 @@ else
     echo("Nem prímszám");
 }
 ?> 
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
