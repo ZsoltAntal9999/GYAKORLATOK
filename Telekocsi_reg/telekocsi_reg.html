@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Telekocsi</title>
+    <link rel="stylesheet" href="style.css">
+	<script>
+		function jelszofgv(){
+			var a=document.getElementById("jelszo").value;
+			if(a==""){
+				alert("Üres a jelszó!");
+            }
+			var b=document.getElementById("jelszoism").value;
+			if(a==b){
+				alert("Sikeres regisztráció!");
+			}
+			else{
+				alert("Nem egyezik a két jelszó!");
+			}
+            if(a=="" || b==""){
+                alert("Írj be egy jelszót, majd ellenőrizd!");
+            }
+		}
+
+
+	</script>
+</head>
+
+<body>
+<div class="tartalom" >
+	<h1 class="cim"><u>Telekocsi</u></h1>
+<div class="menu">
+	<p><a href="telekocsi.html">Bemutatkozás</a></p> <p>Sofőröknek</p> <p>Utasoknak</p> <p>Bejelentkezés</p> <p>Regisztráció</p>
+</div>
+<h2>Regisztráció</h2>	
+<form>
+    <div class="urlap">
+	<p><label for="nev" > Név: </label> <input type="text" name="nev" id="nev" value=""></p>
+	<p><label for="e-mail" > E-mail cím: </label> <input type="text" name="e-mail" id="e-mail" value=""></p>
+	<p><label for="jelszo"> Jelszó: </label> <input type="text" name="jelszo" id="jelszo" value=""></p>
+	<p><label for="jelszoism"> Jelszó ismét: </label> <input type="text" name="jelszoism" id="jelszoism" value=""></p>
+	<p><input type="button" name="mentes" id="mentes" value="Mentés" onclick="jelszofgv()"></p>
+</div>
+</form>
+
+
+
+</div>
+
+</body>
+
+</html>
