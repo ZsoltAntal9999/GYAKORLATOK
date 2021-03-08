@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="HU">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Oldat</title>
+	<link rel="stylesheet" href="oldat.css">
+
+	<script>
+		
+		function szamol(){
+			document.getElementById("gomb").addEventListener('click',szamol)
+			let moa_ertek=parseInt(document.getElementById("moa").value);
+			let mosz_ertek=parseInt(document.getElementById("mosz").value);
+			let eredmenyi=( moa_ertek / ( mosz_ertek + moa_ertek ) ) * 100
+			document.getElementById("eredmeny").innerHTML=eredmenyi;
+		}
+	</script>
+</head>
+
+<body>
+		<h1>Oldat</h1>
+		<p>A többkomponensű, homogén, vagy inhomogén rendszereket összefoglaló néven elegyeknek nevezzük.</p>
+		<p>Az oldat elnevezést ezen belül azokra a rendszerekre használjuk, amelyekben egyik komponens – az oldószer – koncentrációja a többiéhez – oldott anyagok – képest viszonylag nagy. A komponens a rendszert alkotó, kémiailag egységes részecskéinek halmaza. Megkülönböztetünk egy-, két- és többkomponensű rendszereket.</p>
+		<p>Gyakori oldószerek például a víz, benzin, alkohol stb. Oldott anyag lehet például a só, cukor, oxigén, alkohol stb.</p>
+
+
+		<h2>Az oldatok telítettsége</h2>
+        
+		<p>Az oldatokat telítettség szempontjából több csoportba sorolhatjuk:</p>
+        <ul>
+			<img src="oldat.jpg" alt="Kémcsövek, lombikok" title="Kémcsövek, lombikok" id="oldat">
+            <li><span id="oldatok">híg oldat</span>: ha az oldott anyag részarányát minden határon túl csökkentjük, akkor a híg oldat fogalmához jutunk. A híg oldatok törvényszerűségei nem az oldott anyagtól, hanem az oldószertől függenek.</li>
+            <li><span id="oldatok">telítetlen oldat</span>: ha az oldott komponens koncentrációja kisebb, mint az adott körülményekhez (oldószer, hőmérséklet, nyomás) tartozó oldhatósága (az oldandó anyagból még több is oldódhat).</li>
+            <li><span id="oldatok">telített oldat</span>: ha az oldott komponens koncentrációja megegyezik az adott körülményekhez	(oldószer, hőmérséklet, nyomás) tartozó oldhatóságával (a feleslegben hozzáadott anyag oldatlanul visszamarad).</li>
+            <li><span id="oldatok">túltelített az oldat</span>, ha az oldott komponens koncentrációja nagyobb, mint az adott körülményekhez (oldószer, hőmérséklet, nyomás) tartozó oldhatósága. Ilyen rendszer akkor jön létre, ha adott hőmérsékleten egy telített oldat elkezd hűlni és benne a kristálygóc-képződés különféle gátlások miatt nem indul meg.</li>
+        </ul>
+		
+
+		<h2>Az oldat töménysége</h2>
+		<p>Az oldatok töménységét nemcsak jelzőkkel fejezhetjük ki, hanem számadatokkal is. Erre szolgál az egyik legegyszerűbb kifejezési mód, a tömegszázalék (m/m %). A tömegszázalék megmutatja, hogy az oldott anyag tömege hány százaléka az egész oldat tömegének.</p>
+		<p id="keplet">m/m % = ( moa / ( mosz + moa ) ) * 100, ahol <br>moa = oldott anyag tömege; <br>mosz = oldószer tömege</p>
+
+
+		
+
+		<p><a href="https://hu.wikipedia.org/wiki/Oldat">Wikipedia-Oldat</a></p>
+
+		<h2>Feladat</h2>
+
+		Hány tömegszázalékos az az oldat, amelyben <input type="number" name="moa" id="moa" min="0">  g sót feloldunk <input type="number" name="mosz" id="mosz" min="0"> g vízben?
+		<br>
+		<p> Eredmény: <span id="eredmeny">?</span> m/m%</p>
+		<p>
+		<input type="button" value="Számol" id="gomb" onclick="szamol()">
+		</p>
+		
+</body>
+
+</html>

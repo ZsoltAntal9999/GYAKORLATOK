@@ -1,0 +1,44 @@
+body{
+    background-image: url("minta.jpg");
+}
+#oldat{
+    float: right;
+}
+ul{
+    list-style-image: url("lombik.png");
+}
+a{
+    text-decoration: none;
+    color: black;
+    float: right;
+    font-weight: bold;
+    font-style: italic;
+}
+#oldatok{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#keplet{
+    text-align: center;
+    background-color: darkcyan;
+    width: 500px;
+    height: 100;
+    margin: auto;
+    font-style: italic;
+    color: white;
+}
+#moa{
+    background-color: darkcyan;
+    color: white;
+}
+#mosz{
+    background-color: darkcyan;
+    color: white;
+}
+#gomb{
+    background-color: darkcyan;
+    color: white;
+}
+#eredmeny{
+    color: darkcyan;
+}
